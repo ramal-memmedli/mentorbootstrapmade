@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7.25rem;
+    background-color: #FFF;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active-nav {
+    color: #5fcf80;
+}
+
+nav ul li a {
+    color: rgba(0, 0, 0, .8);
+    font-size: .875rem;
+    padding: 0 1rem;
+    font-weight: 500;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #5fcf80;
+}
+
+header .logo {
+    font-size: 1.875rem;
+    color: #5fcf80;
+    font-weight: 600;
+}
+
+.get-started-h {
+    font-family: 'Raleway', sans-serif;
+    color: #FFF;
+    background-color: #5fcf80;
+    font-size: .875rem;
+    padding: .6rem 1.7rem;
+    border: 2px solid #FFF;
+    border-radius: 2.2rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    -webkit-border-radius: 2.2rem;
+    -moz-border-radius: 2.2rem;
+    -ms-border-radius: 2.2rem;
+    -o-border-radius: 2.2rem;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+.get-started-h:hover {
+    background-color: #4fa067;
+}
+
+#hero {
+    height: 28rem;
+    background-image: url('./images/hero-bg.jpg');
+    background-attachment: fixed;
+    background-position: center 0.1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 7.25rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    width: 50%;
+    color: #FFF;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: #FFF;
+    margin-bottom: 2.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.hero-content a {
+    color: #FFF;
+    font-size: 1rem;
+    padding: .6rem 2rem;
+    border: 2px solid #FFF;
+    border-radius: 2.2rem;
+    -webkit-border-radius: 2.2rem;
+    -moz-border-radius: 2.2rem;
+    -ms-border-radius: 2.2rem;
+    -o-border-radius: 2.2rem;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+.hero-content a:hover {
+    background-color: #5fcf80;
+    border-color: #5fcf80;
+}
+
+#about {
+    padding: 4rem 7.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .about-left {
+    width: 49%;
+}
+
+#about .about-left h2 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#about .about-left p.about-top-p {
+    margin-bottom: 1rem;
+}
+
+#about .about-left p.about-bottom-p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #444;
+    
+}
+
+#about .about-left p.about-top-p i {
+    font-size: 1rem;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#about .about-img {
+    width: 49%;
+
+}
+
+#about .about-img img {
+    width: 100%;
+}
+
+#about .about-left ul.about-list {
+    margin-bottom: 2rem;
+}
+
+#about .about-left ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+#about .about-left ul li i {
+    color: #5fcf80;
+    font-size: 1.2rem;
+}
+
+#statistics {
+    padding: 2.5rem 7.25rem;
+    background-color: #f6f7f6;
+    display: flex;
+    justify-content: space-around;
+}
+
+#statistics div .staticstics-count {
+    font-size: 3rem;
+    color: #5fcf80;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#statistics div .statistics-name {
+    color: #37423b;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+#statistics div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills {
+    padding: 4rem 7.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#skills .why-choose-mentor-card {
+    width: 22rem;
+    padding: 2rem;
+    background-color: #5fcf80;
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    -ms-border-radius: .25rem;
+    -o-border-radius: .25rem;
+}
+
+#skills .why-choose-mentor-card h2 {
+    color: #FFF;
+    font-size: 1.875rem;
+    margin-bottom: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#skills .why-choose-mentor-card p {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 2rem;
+}
+
+#skills .why-choose-mentor-card a {
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    background-color: rgba(255, 255, 255, .2);
+    padding: .6rem 1.6rem;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+#skills .why-choose-mentor-card a:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #5fcf80;
+}
+
+#skills .skill-card {
+    width: 14.5rem;
+    height: 20rem;
+    border: 1px solid rgba(0, 0, 0, .05);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills .skill-card .skill-icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    background-color: #ecf9f0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#skills .skill-card .skill-icon i {
+    font-size: 2rem;
+    color: #5fcf80;
+}
+
+#skills .skill-card h3 {
+    color: #444;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#skills .skill-card p {
+    color: #848484;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.3;
+    text-align: center;
+}
+
+#categories {
+    padding: 0 7.25rem 4rem 7.25rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1.5rem;
+}
+
+#categories .category {
+    border: 1px solid rgba(0, 0, 0, .05);
+    padding: 1.5rem;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+#categories .category a {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: #37423b;
+    font-weight: 600;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+#categories .category:hover,
+#categories .category:hover .category-link {
+    color: #5fcf80;
+    border-color: #5fcf80;
+}
+
+#categories .category i {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+
+#courses {
+    padding: 4rem 7.25rem;
+}
+
+#courses .courses-light-h {
+    font-size: 1rem;
+    color: #b0b0b0;
+    font-weight: 500;
+    position: relative;
+}
+
+#courses .courses-light-h:after {
+    content: ' ';
+    height: 1px;
+    width: 7rem;
+    background-color: #b0b0b0;
+    position: absolute;
+    left: 6rem;
+    top: 50%;
+}
+
+#courses h2.courses-header {
+    font-size: 2.25rem;
+    color: #37423b;
+    margin-bottom: 3rem;
+}
+
+#courses .course-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#courses .course-gallery .course-card {
+    width: 30%;
+    border: 1px solid rgba(0, 0, 0, .05);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+#courses .course-gallery .course-card img {
+    width: 100%;
+}
+
+#courses .course-gallery .course-card .card-content {
+    padding: 1rem;
+}
+
+#courses .course-gallery .course-card .card-content .tag-and-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#courses .course-gallery .course-card .card-content .tag-and-price span.tag {
+    padding: .5rem 1rem;
+    background-color: #5fcf80;
+    color: #FFF;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+#courses .course-gallery .course-card .card-content .tag-and-price span.price {
+    font-size: 1.125rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #37423b;
+}
+
+#courses .course-gallery .course-card .card-content .card-description {
+    margin-bottom: 1rem;
+}
+
+#courses .course-gallery .course-card .card-content .card-description a {
+    color: #37423b;
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+#courses .course-gallery .course-card .card-content .card-description a:hover {
+    color: #5fcf80;
+}
+
+#courses .course-gallery .course-card .card-content .card-description p {
+    font-size: 0.875rem;
+    color: #848484;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#courses .course-gallery .course-card .card-content .courses-card-separator {
+    width: 100%;
+    height: .125rem;
+    background-color: rgba(0, 0, 0, .05);
+    margin-bottom: 1rem;
+}
+
+#courses .course-gallery .course-card .card-content .teacher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#courses .course-gallery .course-card .card-content .teacher .teacher-info {
+    display: flex;
+    align-items: center;
+}
+
+#courses .course-gallery .course-card .card-content .teacher .teacher-info span.teacher-name {
+    color: #848484;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+#courses .course-gallery .course-card .card-content .teacher .teacher-info img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#courses .course-gallery .course-card .card-content .teacher .teacher-stats span.favorite-count,
+#courses .course-gallery .course-card .card-content .teacher .teacher-stats span.student-count {
+    color: #848484;
+}
+
+#courses .course-gallery .course-card .card-content .teacher .teacher-stats {
+    display: flex;
+    align-items: center;
+}
+
+#courses .course-gallery .course-card .card-content .teacher .teacher-stats span.student-count {
+    margin-right: 1rem;
+}
+
+#teachers-area {
+    padding: 0 7.25rem 4rem 7.25rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#teachers-area .teacher-area-card {
+    width: 30%;
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+#teachers-area .teacher-area-card img {
+    width: 100%;
+}
+
+#teachers-area .teacher-area-card .teacher-area-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+
+#teachers-area .teacher-area-card .teacher-area-card-content a {
+    font-size: 1.125rem;
+    color: #37423b;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: .2rem;
+}
+
+#teachers-area .teacher-area-card .teacher-area-card-content span {
+    font-size: 0.75rem;
+    color: #37423b;
+    margin-bottom: .5rem;
+}
+
+#teachers-area .teacher-area-card .teacher-area-card-content p {
+    font-size: 0.875rem;
+    color: #848484;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#teachers-area .teacher-area-card .teacher-area-card-content .teacher-social-media-btns a {
+    font-size: 1.25rem;
+    color: #848484;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+#teachers-area .teacher-area-card .teacher-area-card-content .teacher-social-media-btns a:hover {
+    color: #5fcf80;
+}
+
+#teachers-area .teacher-area-card .teacher-area-card-content .teacher-social-media-btns a:not(:last-child) {
+    margin-right: .5rem;
+}
+
+footer #footer-links {
+    background-color: #f9faf9;
+    padding: 4rem 7.25rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer #footer-links .addresses,
+footer #footer-links .useful-links,
+footer #footer-links .our-services {
+    width: 20%;
+    margin-right: 2%;
+}
+
+footer #footer-links .join-our-newsletter {
+    width: 34%;
+}
+
+footer #footer-links .addresses h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #37423b;
+    margin-bottom: 1rem;
+}
+
+footer #footer-links .addresses p {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #848484;
+    line-height: 1.5rem;
+}
+
+footer #footer-links .useful-links h3,
+footer #footer-links .join-our-newsletter h3,
+footer #footer-links .our-services h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: #37423b;
+    margin-bottom: 1rem;
+}
+
+footer #footer-links .join-our-newsletter p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875rem;
+    color: #37423b;
+    margin-bottom: 1rem;
+}
+
+footer #footer-links .useful-links ul li a,
+footer #footer-links .our-services ul li a {
+    font-size: 0.875rem;
+    color: #848484;
+    margin-left: .5rem;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+footer #footer-links .useful-links ul li,
+footer #footer-links .our-services ul li {
+    margin-bottom: .875rem;
+}
+
+footer #footer-links .useful-links ul li i,
+footer #footer-links .our-services ul li i {
+    color: #5fcf80;
+    font-size: .725rem;
+}
+
+footer #footer-links .useful-links ul li a:hover,
+footer #footer-links .our-services ul li a:hover {
+    color: #5fcf80;
+}
+
+footer #footer-links .join-our-newsletter .search-box {
+    position: relative;
+}
+
+footer #footer-links .join-our-newsletter .search-box input {
+    padding: .7rem 1.4rem;
+    border-radius: 5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
+
+footer #footer-links .join-our-newsletter .search-box button {
+    padding: .7rem 1.4rem;
+    position: absolute;
+    border-radius: 5rem;
+    background-color: #5fcf80;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    right: 0;
+    top: 0;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+footer #footer-links .join-our-newsletter .search-box button:hover {
+    background-color: #4fa067;
+}
+
+footer #copyright {
+    padding: 1rem 7.25rem;
+    background-color: #eef0ef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #copyright .footer-left p {
+    font-size: 0.8rem;
+    color: #37423b;
+}
+
+footer #copyright .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+footer #copyright .footer-right a {
+    font-size: 1rem;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    background-color: #5fcf80;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 250ms ease-in-out;
+    -webkit-transition: 250ms ease-in-out;
+    -moz-transition: 250ms ease-in-out;
+    -ms-transition: 250ms ease-in-out;
+    -o-transition: 250ms ease-in-out;
+}
+
+footer #copyright .footer-right a:hover {
+    background-color: #4fa067;
+}
+
+footer #copyright .footer-right a:not(:last-child) {
+    margin-right: .5rem;
+}
